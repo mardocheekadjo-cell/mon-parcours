@@ -1,2 +1,2 @@
 # mon-parcours
-Portfolio professionnel - Mon parcours de la 3ème à la Licence
+Portfolio professionnel - Mon parcours de la terminale C à la Licence 3
