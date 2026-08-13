@@ -133,6 +133,28 @@ main {
     flex-wrap: wrap;
 }
 
+/* ========== PROFILE PHOTO ========== */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: var(--transition);
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(52, 152, 219, 0.3);
+}
+
 .placeholder-image {
     background: linear-gradient(135deg, var(--secondary-color), var(--accent-color));
     border-radius: 10px;
@@ -490,6 +512,11 @@ section h2 {
         font-size: 1.8rem;
     }
 
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+    }
+
     .placeholder-image {
         height: 250px;
     }
@@ -554,5 +581,10 @@ section h2 {
 
     main {
         padding: 2rem 1rem;
+    }
+
+    .profile-photo {
+        width: 180px;
+        height: 180px;
     }
 }
