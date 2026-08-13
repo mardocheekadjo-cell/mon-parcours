@@ -1,14 +1,27 @@
 [
   {
-    "name": "Repository 1",
-    "starred": "2024-01-15"
+    "name": "freeCodeCamp",
+    "starred": "2024-01-15",
+    "description": "Plateforme d'apprentissage en ligne gratuite"
   },
   {
-    "name": "Repository 2",
-    "starred": "2024-02-20"
+    "name": "The Algorithms - Python",
+    "starred": "2024-02-20",
+    "description": "Collection d'algorithmes et structures de données"
   },
   {
-    "name": "Repository 3",
-    "starred": "2024-03-10"
+    "name": "Vue.js",
+    "starred": "2024-03-10",
+    "description": "Framework JavaScript progressif"
+  },
+  {
+    "name": "React",
+    "starred": "2024-04-05",
+    "description": "Bibliothèque JavaScript pour interfaces utilisateur"
+  },
+  {
+    "name": "TensorFlow",
+    "starred": "2024-05-12",
+    "description": "Plateforme d'apprentissage automatique"
   }
 ]
