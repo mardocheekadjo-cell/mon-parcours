@@ -127,7 +127,7 @@ Allez dans l'onglet **Actions** du dépôt pour voir l'historique des déploieme
 
 ## 📄 Licence
 
-Aucune licence spécifiée - Tous droits réservés © 2024
+Aucune licence spécifiée - Tous droits réservés © 2026
 
 ---
 
