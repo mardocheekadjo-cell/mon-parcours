@@ -1,0 +1,37 @@
+[
+  {
+    "level": "terminale",
+    "title": "Terminale",
+    "program": "Baccalauréat Général",
+    "modules": ["Mathématiques", "NSI (Numérique et Sciences Informatiques)", "Physique-Chimie"],
+    "skills": "Bases en algorithmique et programmation Python."
+  },
+  {
+    "level": "bac",
+    "title": "Baccalauréat",
+    "program": "Obtention du Baccalauréat",
+    "modules": ["Mention Bien"],
+    "skills": "Projet de fin d'année en NSI : création d'un jeu vidéo en Pygame."
+  },
+  {
+    "level": "licence1",
+    "title": "Licence 1",
+    "program": "Licence Informatique",
+    "modules": ["Algorithmique 1", "Programmation Impérative (C)", "Mathématiques discrètes", "Architecture des ordinateurs"],
+    "skills": "Maîtrise des concepts fondamentaux en informatique et programmation bas niveau."
+  },
+  {
+    "level": "licence2",
+    "title": "Licence 2",
+    "program": "Licence Informatique",
+    "modules": ["Programmation Orientée Objet (Java)", "Bases de données (SQL)", "Réseaux", "Développement Web"],
+    "skills": "Création d'applications complètes et gestion de bases de données relationnelles."
+  },
+  {
+    "level": "licence3",
+    "title": "Licence 3",
+    "program": "Licence Informatique",
+    "modules": ["Ingénierie Logicielle", "Algorithmique avancée", "Intelligence Artificielle", "Projet de fin d'études"],
+    "skills": "Gestion de projet agile, conception logicielle avancée et stage en entreprise."
+  }
+]

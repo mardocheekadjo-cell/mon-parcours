@@ -1,33 +1,60 @@
-// Script pour gérer la navigation entre les onglets
-fetch("events.json")
+// Script pour générer la timeline du portfolio
+fetch("education.json")
   .then((response) => {
     if (!response.ok) {
-      throw new Error(`HTTP error! status: ${response.status}`);
+      throw new Error(`Erreur HTTP! statut: ${response.status}`);
     }
     return response.json();
   })
-  .then((events) => {
-    const list = document.querySelector("#starred");
-    if (!list) {
-      console.error("Element #starred not found");
+  .then((educationData) => {
+    const timelineContainer = document.querySelector("#timeline");
+    if (!timelineContainer) {
+      console.error("Élément #timeline non trouvé");
       return;
     }
     
-    if (!Array.isArray(events) || events.length === 0) {
-      list.innerHTML = "<li>No starred repositories found</li>";
+    if (!Array.isArray(educationData) || educationData.length === 0) {
+      timelineContainer.innerHTML = "<p class='error'>Aucune donnée de parcours trouvée.</p>";
       return;
     }
     
-    events.forEach((event) => {
-      const item = document.createElement("li");
-      item.textContent = `${event.name || "Unknown"} — starred ${event.starred || "N/A"}`;
-      list.appendChild(item);
+    // Vider le conteneur avant d'ajouter le contenu
+    timelineContainer.innerHTML = "";
+
+    // Créer la liste de la timeline
+    const ul = document.createElement("ul");
+    ul.className = "timeline-list";
+
+    educationData.forEach((item) => {
+      const li = document.createElement("li");
+      li.className = `timeline-item ${item.level}`;
+
+      const modulesList = item.modules.map(mod => `<li>${mod}</li>`).join("");
+
+      li.innerHTML = `
+        <div class="timeline-content">
+          <h3>${item.title}</h3>
+          <h4 class="program">${item.program}</h4>
+          <div class="details">
+            <p><strong>Compétences clés :</strong> ${item.skills}</p>
+            <div class="modules">
+              <strong>Modules principaux :</strong>
+              <ul>
+                ${modulesList}
+              </ul>
+            </div>
+          </div>
+        </div>
+      `;
+      ul.appendChild(li);
     });
+
+    timelineContainer.appendChild(ul);
   })
   .catch((error) => {
-    console.error("Error loading events:", error);
-    const list = document.querySelector("#starred");
-    if (list) {
-      list.innerHTML = "<li>Error loading starred repositories</li>";
+    console.error("Erreur lors du chargement des données éducatives:", error);
+    const timelineContainer = document.querySelector("#timeline");
+    if (timelineContainer) {
+      timelineContainer.innerHTML = "<p class='error'>Erreur lors du chargement du parcours.</p>";
     }
   });
