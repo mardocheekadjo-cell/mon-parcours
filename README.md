@@ -11,14 +11,13 @@ Le site est déployé sur GitHub Pages et accessible à l'adresse suivante :
 
 ```
 mon-parcours/
+├── assets/images       #photos de profils et document éventuels
+│   └── Photo profile.jpg
+├── README.md           # Description du projet      
 ├── index.html          # Page principale (timeline du parcours)
 ├── style.css           # Feuille de styles
-├── script.js           # Script JavaScript pour animations
-├── education.json      # Données du parcours éducatif
-├── README.md           # Ce fichier
-└── .github/
-    └── workflows/
-        └── deploy.yml  # Workflow de déploiement automatique
+└──  script.js           # Script JavaScript pour animations
+
 ```
 
 ## ✨ Fonctionnalités
@@ -131,4 +130,4 @@ Aucune licence spécifiée - Tous droits réservés © 2026
 
 ---
 
-**Créé avec ❤️ par mardocheekadjo-cell**
+**Créé avec ❤️ par mardochee kadjo**
